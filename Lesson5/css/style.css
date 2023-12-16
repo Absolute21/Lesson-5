@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.section-title:after {
+    position: absolute;
+    content: "";
+    right: calc(50% - 170px / 2);
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
+    bottom: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-bottom: 64px;
+}
+
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 54px;
+    text-transform: uppercase;
+}
+
+
+.container-text {
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #86878B;
+}
+
+.customers {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-description {
+    padding-top: 83px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.customers-description {
+    display: inline-block;
+    text-align: center;
+}
+
+.description-text {
+    text-align: center;
+    background: #E2E2E2;
+    width: 370px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #86878B;
+    padding: 38px 30px 37px 30px;
+    border-radius: 10px;
+
+}
+.description-text:before {
+    content: '';
+    position: relative;
+    bottom: -160px;
+    left: 10px;
+    border-top: 20px solid #E2E2E2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.managers {
+    padding-top: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.managers--name {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    width: 270px;
+    height: 54px;
+
+}
+
+.managers--title {
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+}
+
+.managers-avatar {
+    text-align: start;
+    display: flex;
+}
+ .managers-img {
+     margin-top: 46px;
+     display: inline-block;
+     width: 70px;
+     height: 70px;
+     margin-right: 30px;
+     background: url("../assets/Ellipse 7.png");
+ }
+
+ .customers-content {
+     display: inline-block;
+     padding-top: 46px;
+     vertical-align: top;
+ }
+
+.social-media-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.social-media {
+    height: 140px;
+    background-color: #F8EFEF;
+}
+
+.social-media__text {
+    float: left;
+    width: 360px;
+}
+
+.social-media__text--title {
+    padding-top: 16px;
+    padding-bottom: 31px;
+    font-size: 24px;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+
+}
+
+.social-media__text--paragraph {
+    font-size: 18px;
+    width: 470px;
+    font-family: 'Raleway', sans-serif;
+    color: #86878B;
+}
+
+.social-media__links {
+    float: right;
+    padding: 35px 0;
+    margin-left: 30px;
+}
+
+.social-media__links-icons {
+    display: inline-block;
+}
+
+.social-media__icon-link {
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+.social-media__icon-link:last-child {
+    margin-right: 0;
+}
+
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 164px;
+    text-align: center;
+    background: #000000;
+}
+
+.footer {
+    height: 164px;
+    background-color: #000000;
+}
+
+.footer-links {
+    padding-top: 35px;
+    padding-bottom: 27px;
+}
+
+.footer-links__icon-link {
+    display: inline-block;
+    flex-direction: row;
+    width: 53px;
+    height: 53px;
+    margin-right: 32px;
+}
+
+a svg:hover #facebook {
+    fill: #EC7979;
+    transition: 200ms;
+    transform: scale(1.2);
+}
+
+a svg:hover #facebook-icon {
+    fill: #EC7979;
+    transition: 200ms;
+    transform: scale(1.2);
+}
+
+a svg:hover #twitter {
+    fill: #79a1ec;
+    transition: 200ms;
+    transform: rotate(20deg);
+}
+
+a svg:hover #twitter-icon {
+    fill: #79a1ec;
+    transition: 200ms;
+    transform: rotate(20deg);
+}
+
+a svg:hover #linkedin {
+    fill: #ecd179;
+    transition: 200ms;
+    transform: skew(15deg);
+}
+
+a svg:hover #linkedin-icon {
+    fill: #ecd179;
+    transition: 200ms;
+    transform: skew(15deg);
+}
+
+a svg:hover #pinterest {
+    fill: #ec7983;
+    transition: 200ms;
+    transform: matrix(0.7,0.7,-0.7,0.7,10,10);
+}
+
+a svg:hover #pinterest-icon {
+    fill: #ec7983;
+    transition: 200ms;
+    transform: matrix(0.7,0.7,-0.7,0.7,10,10);
+}
+
+a svg:hover #instagram {
+    fill: #9fec79;
+    transition: 200ms;
+    transform: scale(0.5, 0.5);
+}
+a svg:hover #instagram-icon {
+    fill: #9fec79;
+    transition: 200ms;
+    transform: scale(0.5, 0.5);
+}
+
+a svg:hover #github {
+    fill: #d779ec;
+    transition: 200ms;
+    transform: scale(0.5, 0.5);
+}
+
+a svg:hover #github-icon {
+    fill: #d779ec;
+    transition: 200ms;
+    transform: scale(0.5, 0.5);
+}
+
+a svg:hover #rss {
+    fill: #79ecd7;
+    transition: 200ms;
+    transform: scale(0.5, 0.5);
+}
+
+a svg:hover #rss-icon {
+    fill: #79ecd7;
+    transition: 200ms;
+    transform: scale(0.5, 0.5);
+}
+
+.footer__text {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF80;
+    opacity: 0.5;
+    padding-bottom: 27px;
+}
