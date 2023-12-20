@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul li a {
+    color: #ffffff;
+}
+
+.header-container {
+    height: 75px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+.nav__block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 22px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 21px;
+}
+
+.nav__block--links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__block--links li {
+    width: 113px;
+}
+
+.nav__block--links a {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.section-title:after {
+    position: absolute;
+    content: "";
+    right: calc(50% - 170px / 2);
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
+    bottom: 0;
+}
+.section {
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-bottom: 64px;
+}
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 54px;
+    text-transform: uppercase;
+}
+
+.container-text {
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #86878B;
+}
+
+
+.registration {
+    margin-top: 89px;
+}
+
+
+.registration__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.registration__form-block {
+    display: flex;
+    flex-direction: column;
+    height: 211px;;
+    vertical-align: top;
+}
+
+
+.registration__form-block--input {
+    display: block;
+    width: 571px;
+    height: 211px;
+    resize: none;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    font-family: 'OpenSans', sans-serif;
+    border: none;
+    color: #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+
+.registration__form-block--area {
+    width: 569px;
+    height: 199px;
+    resize: none;
+    font-size: 14px;
+    color: #BDBDBD;
+    border: none;
+    font-family: 'OpenSans', sans-serif;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+
+.registration__form--button {
+    width: 370px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    height: 58px;
+    background-color: #EC7979;
+    border: none;
+    margin-top: 50px;
+    margin-left: 33%;
+    margin-bottom: 54px;
+}
+
+
+.registration__form--button:hover {
+    color: #79ece2;
+    background-color: #000000;
+    transition: all 200ms ease-in-out;
+}
