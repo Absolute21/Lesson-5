@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body, .container {
+    height: 100%;
+    margin: 0;
+}
+
+.main {
+    width: 1200px;
+    padding: 15px 15px;
+    margin: 0 auto;
+    height: 570px;
+    background-color: blue;
+}
+
+.container * {
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Masonry-I Responsive Overlap Overlap"
+    "Masonry-I Fluid Explicitly-Placed Negative-Space"
+    "Flexible-Breadth Masonry-II Explicitly-Placed Masonry-III"
+    "DOM-Order Masonry-II Named-Tracks Named-Tracks";
+    }
+
+.Masonry-I {
+    grid-area: Masonry-I;
+}
+
+.Responsive {
+    grid-area: Responsive;
+}
+
+.Fluid {
+    grid-area: Fluid;
+}
+
+.Overlap {
+    grid-area: Overlap;
+}
+
+.Explicitly-Placed {
+    grid-area: Explicitly-Placed;
+}
+
+.Negative-Space {
+    grid-area: Negative-Space;
+}
+
+.Masonry-III {
+    grid-area: Masonry-III;
+}
+
+.Named-Tracks {
+    grid-area: Named-Tracks;
+}
+
+.Masonry-II {
+    grid-area: Masonry-II;
+}
+
+.Flexible-Breadth {
+    grid-area: Flexible-Breadth;
+}
+
+.DOM-Order {
+    grid-area: DOM-Order;
+}
+
+.container *:after {
+    content:attr(class);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
